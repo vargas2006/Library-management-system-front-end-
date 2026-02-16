@@ -416,7 +416,6 @@ body.dark .switch::before{
 
 @media (max-width: 768px) {
   .modal-content {
-    position: fixed;
     top: 10px; 
     left: 50%;
     transform: translateX(-50%);
@@ -424,21 +423,17 @@ body.dark .switch::before{
     max-width: 400px;    
     max-height: calc(100vh - 20px);
     overflow-y: auto;
-    background: var(--sidebar-color);
-    border-radius: 12px;
-    padding: 20px;
-
-    z-index: 1050;       
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
   }
+}
+
 
  
   #bookModal {
-    display: flex !important;
+    display: none;
     align-items: flex-start;
     padding-top: 10px;       
     z-index: 1040;
   }
-}
+
 
 
