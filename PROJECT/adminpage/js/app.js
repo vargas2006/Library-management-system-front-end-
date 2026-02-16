@@ -175,28 +175,3 @@ document.body.addEventListener('submit', function (e) {
         }
     }
 });
-
-// ==========================
-// MODAL OPEN / CLOSE LOGIC
-// ==========================
-const addBookBtn = document.getElementById("addBookBtn");
-const bookModal = document.getElementById("bookModal");
-const closeModal = document.getElementById("closeModal");
-
-addBookBtn.addEventListener("click", () => {
-    bookModal.style.display = "flex";
-    document.body.style.overflow = "hidden"; // para hindi scroll sa background
-});
-
-closeModal.addEventListener("click", () => {
-    bookModal.style.display = "none";
-    document.body.style.overflow = "auto";
-});
-
-
-bookModal.addEventListener("click", (e) => {
-    if(e.target === bookModal){
-        bookModal.style.display = "none";
-        document.body.style.overflow = "auto";
-    }
-});
