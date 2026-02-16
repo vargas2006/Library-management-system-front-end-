@@ -1,0 +1,38 @@
+<div id="bookModal" class="modal">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <h3>Add Book</h3>
+      <span id="closeModal" class="close-btn">&times;</span>
+    </div>
+
+    <form id="bookForm" class="modal-form">
+
+      <label>Book ID</label>
+      <input type="text" id="bookId" required>
+
+      <label>Title</label>
+      <input type="text" id="bookTitle" required>
+
+      <label>Author</label>
+      <input type="text" id="bookAuthor" required>
+
+      <label>Category</label>
+      <input type="text" id="bookCategory" required>
+
+      <label>Cover Image (optional)</label>
+      <input type="file" id="bookCover" accept="image/*">
+
+      <label>Status</label>
+      <select id="bookStatus" required>
+        <option value="Available">Available</option>
+        <option value="Borrowed">Borrowed</option>
+      </select>
+
+      <button type="submit" class="btn-primary full-btn">
+        Add Book
+      </button>
+
+    </form>
+  </div>
+</div>
